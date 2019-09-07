@@ -37,7 +37,7 @@ function getSubSetsb(nums){
 		return [[]];
 	}
 	let [num,...restnums] = nums;
-	sets = getSubSetsb(restnums);
+	let sets = getSubSetsb(restnums);
 	return sets.map((subset)=>{
 		return [...subset,num];
 	}).concat(sets);
@@ -54,9 +54,21 @@ function getSubSetsc(nums,sets=[[]]){
 	return getSubSetsc(restnums,sets);
 }
 
+function getSubSetsd(nums,status = false){
+	if(nums.length === 0){
+		return [[]];
+	}
+	let[num,...restnums] = nums;
+	let subsetsa = getSubSetsd(restnums,true).map((set)=>{
+		return [...set,num];
+	});
+	let subsetsb = getSubSetsd(restnums,false);
+	return [...subsetsa,...subsetsb];
+}
+
 let nums = [1,2,3];
 
-let subsets = getSubSets(nums);
+let subsets = getSubSetsb(nums);
 console.log(subsets);
 
 export default getSubSets;
