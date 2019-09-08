@@ -1,7 +1,23 @@
 export default class Utils{
-	reverseWords(str){
-		return str.split(" ").map((word)=>{
-			return word.split("").reverse().join("");
-		}).join(" ");
+	constructor(){
+		this.grapha = {
+			'1':{
+				'4':{
+					'6':{},
+					'7':{}
+				},
+				'5':{
+					'8':{},
+					'9':{}
+				}
+			},
+			'2':{
+				'10':{}
+			},
+			'3':{
+
+			}
+		};
 	}
+
 }
