@@ -14,36 +14,27 @@
 function cardgroup(arr){
 	arr.sort();
 	let min;
-	let max;
+	let size = [];
 	let cur = 1;
 	for (var i = 0; i < arr.length; i++) {
 		if(arr[i+1]===arr[i]){
 			cur++;
 		}else{
-			if(!min || !max){
-				min = cur;
-				max = cur;
-			}
-			if(cur < min){
-				min = cur;				
-			}
-			if(cur>max){
-				max = cur;
-			}
-			if(!arr[i+1]){
-				break;
-			}
+			size.push(cur);
 			cur = 1;
 		}
 	}
-	if(max%min === 0 && min>=2){
-		return true;
-	}else{
-		return false;
-	}
+	size.sort();
+	min = size[0];
+	return	size.every((s)=>{
+		return gcd(s,min)>1;
+	});
+}
+function gcd(a,b){
+	return b===0?a:gcd(b,a%b);
 }
 
-let testcase = [1,2,3,4,4,3,2,1];
+let testcase = [1,1,1,2,2,2,3,3];
 let returncardgroup = cardgroup(testcase);
 console.log(returncardgroup);
 
