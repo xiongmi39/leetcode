@@ -8,7 +8,8 @@ import Utils from './js/utils/utils.js';
 // import cardgroup from './js/array/card914.js';
 // import plant from './js/array/flowers605.js';
 // import findPoisonedDuration from './js/array/teemo495.js';
-import asteroidCollision from './js/array/asteroid735.js';
+// import asteroidCollision from './js/array/asteroid735.js';
+import merge from './js/array/merge54.js';
 
 // import dfssearch from './js/dfs/dfs.js';
 // import bfssearch from './js/bfs/bfs.js';
