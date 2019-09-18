@@ -42,7 +42,27 @@ var insert = function(intervals, newInterval) {
     return intervals;
 };
 
-let testcase = insert([[1,5]],[6,7]);
+function insert2(intervals, newInterval){
+	let left = newInterval[0];
+	let right = newInterval[1];
+	let i = 0;
+	for (; i < intervals.length; ) {
+		if(left > intervals[i][1]){
+			i++;
+			continue;
+		}
+		if(right < intervals[i][0]){
+			break;
+		}
+		left = Math.min(left,intervals[i][0]);
+		right = Math.max(right,intervals[i][1]);
+		intervals.splice(i,1);
+	}
+	intervals.splice(i,0,[left,right]);
+	return intervals;
+}
+
+let testcase = insert2([[1,5]],[2,3]);
 console.log(testcase);
 
 export default insert;
