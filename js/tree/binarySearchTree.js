@@ -99,6 +99,21 @@ export default class binarySearchTree{
 		this.removeNode(root,key);
 	}
 	removeNode(node,key){
+		if(key === node.key){
+			if(node.left === null && node.right === null){
+				node.key = null;
+				return null;
+			}
+			if(node.right == null){
+				
+			}
+		}		
+		if(key < node.key){
+			removeNode(node.left,key);			
+		}
+		if(key > node.key){
+			removeNode(node.right,key);
+		}
 
 	}
 
