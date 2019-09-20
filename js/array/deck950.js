@@ -18,8 +18,26 @@
  	}
  	return outdeck;
  };
+ function deckRevealedIncreasing2(deck){
+ 	if(deck.length === 1){
+ 		return deck;
+ 	}
+ 	deck.sort((a,b)=>{
+ 		return b-a;
+ 	});
+ 	let j = deck.length-1;
+ 	deck.push(deck.shift());
+ 	j--;
+ 	while(j>0){
+ 		deck.splice(j,0,deck.shift());
+ 		deck.splice(j,0,deck.pop()); 
+ 		j--;		
+ 	}
+ 	return deck;
+ }
 
-let testcase = deckRevealedIncreasing([17,13,11,2,3,5]);
+let testcase = deckRevealedIncreasing2([17,13,11,2,3,5,7]);
+//132
 console.log(testcase);
 
 export default deckRevealedIncreasing;
