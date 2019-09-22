@@ -16,6 +16,13 @@ var isOneBitCharacter = function(bits) {
     return false;
 };
 
-let testcase = isOneBitCharacter([1,1,1,0]);
+function isOneBitCharacter2(bits){
+	let i = bits.length-2;
+	while(i>=0 && bits[i]>0){
+		i--;
+	}
+return (bits.length-2-i)%2==0;
+}
+let testcase = isOneBitCharacter2([1,1,1,0]);
 console.log(testcase);
 export default isOneBitCharacter;
