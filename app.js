@@ -12,7 +12,8 @@ import Utils from './js/utils/utils.js';
 // import merge from './js/array/merge54.js';
 // import insert from './js/array/insert57.js';
 // import deckRevealedIncreasing from './js/array/deck950.js';
-import firstMissingPositive from './js/array/firstMissing41.js';
+// import firstMissingPositive from './js/array/firstMissing41.js';
+import missingNumber from './js/array/missingNo268.js';
 
 // import dfssearch from './js/dfs/dfs.js';
 // import bfssearch from './js/bfs/bfs.js';
