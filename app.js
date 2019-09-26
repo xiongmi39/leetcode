@@ -14,7 +14,9 @@ import Utils from './js/utils/utils.js';
 // import deckRevealedIncreasing from './js/array/deck950.js';
 // import firstMissingPositive from './js/array/firstMissing41.js';
 // import missingNumber from './js/array/missingNo268.js';
-import isOneBitCharacter from './js/array/isOneBit717.js';
+// import isOneBitCharacter from './js/array/isOneBit717.js';
+// import singleNumber from './js/array/singleNo136.js';
+import threeSum from './js/array/threesum15.js';
 
 // import dfssearch from './js/dfs/dfs.js';
 // import bfssearch from './js/bfs/bfs.js';
