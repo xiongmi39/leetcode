@@ -17,7 +17,8 @@ import Utils from './js/utils/utils.js';
 // import isOneBitCharacter from './js/array/isOneBit717.js';
 // import singleNumber from './js/array/singleNo136.js';
 // import threeSum from './js/array/threesum15.js';
-import combinationSum from './js/array/combinationSum39.js';
+// import combinationSum from './js/array/combinationSum39.js';
+import permute from './js/array/permute46.js';
 
 
 // import dfssearch from './js/dfs/dfs.js';
