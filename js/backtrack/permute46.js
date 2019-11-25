@@ -8,6 +8,7 @@ var permute = function(nums) {
 	}
     let list = [];
     return backtrack(list,[],nums);
+    // return backtrack2(list,[],nums,0);
 };
 
 
@@ -26,7 +27,19 @@ function backtrack(list,tmparr,nums){
 	return list;
 }
 
-let testcase = permute([3,2,1]);
+function backtrack2(list,tmparr,nums,idx){
+	if(tmparr.length >= nums.length){
+		return list.push([...Array.from(tmparr)]);
+	}
+	for (var i = idx; i < nums.length; i++) {
+		tmparr.push(nums[i]);
+		backtrack2(list,tmparr,nums,i);
+		tmparr.pop();
+	}
+	return list;
+}
+
+let testcase = permute([1,2,3]);
 console.log(testcase);
 
 export default permute;
