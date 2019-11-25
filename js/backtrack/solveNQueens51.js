@@ -25,7 +25,7 @@ function backtrack(list,tmparr,n,cur,condition){
 			}
 			tmparr.push(cur.y);
 			setQueen(cur,condition,true);
-			backtrack();
+			backtrack(list,tmparr,n,cur,condition);
 			setQueen(cur,condition,false);
 			tmparr.pop();
 		}		
