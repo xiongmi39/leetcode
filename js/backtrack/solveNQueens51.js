@@ -10,6 +10,7 @@ var solveNQueens = function(n) {
 	let list = [];
 	let cur = [1,1];
 	backtrack(list,[],n,cur,condition);
+	format(list);
     return list;
 };
 
@@ -21,7 +22,7 @@ function backtrack(list,tmparr,n,cur,condition){
 	}
 	for (let i = cur[1]; i <= n+1; i++) {
 		if(i>n){
-			return list;
+			return ;
 		}
 		for (let j = 1; j <= n+1; j++) {
 			//这一行都无处可放，剪枝
@@ -43,7 +44,6 @@ function backtrack(list,tmparr,n,cur,condition){
 			}
 		}			
 	}
-	return list;
 }
 
 function setQueen(cur,condition,flg){
@@ -54,17 +54,14 @@ function setQueen(cur,condition,flg){
 }
 
 function checkValue(cur,condition){
-	if(condition.row[cur[0]]||condition.leftl[cur[0]+cur[1]] || condition.rightl[cur[1]-cur[0]]){
-		return true;
-	}
-	return false;
+	return condition.row[cur[0]]||condition.leftl[cur[0]+cur[1]] || condition.rightl[cur[1]-cur[0]];
 }
 
 function format(result){
 	return '';
 }
 
-let testcase = solveNQueens(8);
+let testcase = solveNQueens(4);
 console.log(testcase);
 
 export default solveNQueens;
