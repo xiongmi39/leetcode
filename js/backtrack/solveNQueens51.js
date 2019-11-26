@@ -11,7 +11,7 @@ var solveNQueens = function(n) {
 	let cur = [1,1];
 	backtrack(list,[],n,cur,condition);
 	format(list);
-    return list;
+    return format(list);
 };
 
 function backtrack(list,tmparr,n,cur,condition){
@@ -57,8 +57,22 @@ function checkValue(cur,condition){
 	return condition.row[cur[0]]||condition.leftl[cur[0]+cur[1]] || condition.rightl[cur[1]-cur[0]];
 }
 
-function format(result){
-	return '';
+function format(list){
+let glist =	list.map((arr)=>{
+	let garr = 	arr.map((q)=>{
+			let val = "";
+			for (let i = 1; i <= arr.length; i++) {
+				if(i == q){
+					val += "Q";
+				}else{
+					val+=".";
+				}
+			}
+			return val;
+		});
+		return garr;
+	});
+	return glist;
 }
 
 let testcase = solveNQueens(4);
