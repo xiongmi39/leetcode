@@ -19,7 +19,8 @@ import Utils from './js/utils/utils.js';
 // import threeSum from './js/array/threesum15.js';
 // import combinationSum from './js/array/combinationSum39.js';
 // import permute from './js/backtrack/permute46.js';
-import permute from './js/backtrack/solveNQueens51.js';
+// import permute from './js/backtrack/solveNQueens51.js';
+import generateParenthesis from './js/backtrack/22generateParenthesis.js';
 
 // import dfssearch from './js/dfs/dfs.js';
 // import bfssearch from './js/bfs/bfs.js';
