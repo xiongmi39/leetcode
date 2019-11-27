@@ -10,40 +10,16 @@ var generateParenthesis = function(n) {
     return list;
 };
 
-//验证合法性
-function pushStack(arr){
-	let stack = [];
-	for (var i = 0; i < arr.length; i++) {
-		if(arr[i] == '('){
-			stack.push(arr[i]);
-		}else{
-			stack.pop();
-		}
-	}
-	if(stack.length == 0){
-		return true;
-	}
-	return false;
-}
-
 function backtrack(list,tmparr,n,lr,count){
-		//剪枝
-	if(count[')'] == 0 && count['(']>0 && n>0){
-		return;
-	}
-	if(tmparr[0] == ')'){
+	//有括号多余左括号的情况下，剪枝
+	if(count[')'] < count['(']){
 		return;
 	}
 	//加入结果集
 	if(n==0){
 		if(count['('] == 0 && count[')'] == 0 && tmparr[tmparr.length-1] == ')'){
-			//验证合法性
-			if(pushStack(tmparr)){
-				return list.push(tmparr.join(''));
-			}else{
-				return;
-			}
-			
+			return list.push(tmparr.join(''));
+
 		}else{
 			return;
 		}		
@@ -60,9 +36,7 @@ function backtrack(list,tmparr,n,lr,count){
 		count[lr[i]]++;
 		tmparr.pop();	
 	}
-return list;
-			
-
+return list;			
 }
 
 let testcase = generateParenthesis(3);
