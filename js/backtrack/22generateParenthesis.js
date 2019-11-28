@@ -25,7 +25,6 @@ function backtrack(list,tmparr,n,lr,count){
 		}		
 	}
 
-
 	for (let i = 0; i < lr.length; i++) {
 		if(count[lr[i]]== 0){
 			continue;
