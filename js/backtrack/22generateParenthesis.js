@@ -11,7 +11,7 @@ var generateParenthesis = function(n) {
 };
 
 function backtrack(list,tmparr,n,lr,count){
-	//有括号多余左括号的情况下，剪枝
+	//右括号多于左括号的情况下，剪枝
 	if(count[')'] < count['(']){
 		return;
 	}

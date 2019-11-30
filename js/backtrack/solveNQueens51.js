@@ -20,8 +20,7 @@ function backtrack(list,tmparr,n,cur,condition){
 		list.push([...Array.from(tmparr)]);
 		return list;
 	}
-	for (let i = cur[1]; i <= n+1; i++) {
-		if(i>n){
+		if(cur[1]>n){
 			return ;
 		}
 		for (let j = 1; j <= n+1; j++) {
@@ -43,7 +42,6 @@ function backtrack(list,tmparr,n,cur,condition){
 				tmparr.pop();
 			}
 		}			
-	}
 }
 
 function setQueen(cur,condition,flg){
