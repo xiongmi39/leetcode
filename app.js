@@ -23,7 +23,8 @@ import Utils from './js/utils/utils.js';
 // import generateParenthesis from './js/backtrack/22generateParenthesis.js';
 // import letterCombinations from './js/backtrack/17letterCombinations.js';
 // import isValidSudoku from './js/hash/36isValidSudoku.js';
-import exist from './js/backtrack/79exist.js';
+// import exist from './js/backtrack/79exist.js';
+import combinationSum2 from './js/backtrack/40combinationSum2.js';
 
 // import solveSudoku from './js/backtrack/37solveSudoku.js';
 
