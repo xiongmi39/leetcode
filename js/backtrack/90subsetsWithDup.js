@@ -23,7 +23,21 @@ function backtrack(list,tmparr,nums,n){
 	}
 }
 
-let testcase = subsetsWithDup([1,2]);
+function getSubSets(arr){
+	arr.sort((a,b)=>{
+		return a-b;
+	});
+	let sets = [[]];
+	for (var i = 0; i < arr.length; i++) {
+	sets = [...sets.map((sub)=>{
+			return [...sub,arr[i]];
+		}),...sets]	;
+	}
+
+	return sets;
+}
+
+let testcase = getSubSets([1,2,2]);
 console.log(testcase);
 
 export default subsetsWithDup;

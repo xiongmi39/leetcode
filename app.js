@@ -25,7 +25,9 @@ import Utils from './js/utils/utils.js';
 // import isValidSudoku from './js/hash/36isValidSudoku.js';
 // import exist from './js/backtrack/79exist.js';
 // import combinationSum2 from './js/backtrack/40combinationSum2.js';
-import subsetsWithDup from './js/backtrack/90subsetsWithDup.js';
+// import subsetsWithDup from './js/backtrack/90subsetsWithDup.js';
+// import permuteUnique from './js/backtrack/47permuteUnique.js';
+import totalNQueens from './js/backtrack/52totalNQueens.js';
 
 // import solveSudoku from './js/backtrack/37solveSudoku.js';
 
