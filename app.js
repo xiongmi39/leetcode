@@ -27,7 +27,9 @@ import Utils from './js/utils/utils.js';
 // import combinationSum2 from './js/backtrack/40combinationSum2.js';
 // import subsetsWithDup from './js/backtrack/90subsetsWithDup.js';
 // import permuteUnique from './js/backtrack/47permuteUnique.js';
-import totalNQueens from './js/backtrack/52totalNQueens.js';
+// import totalNQueens from './js/backtrack/52totalNQueens.js';
+
+import fraction from './js/LCP/2fraction.js';
 
 // import solveSudoku from './js/backtrack/37solveSudoku.js';
 
