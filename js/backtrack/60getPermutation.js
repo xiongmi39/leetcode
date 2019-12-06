@@ -45,8 +45,11 @@ function getk(n,k,arr,tmparr){
 		tmparr.push(arr[0]);
 		return;
 	}
+	//n个数字，以每个数字开头，各有j个排列，如【1,2,3】，以1,2,3开头，各有（3-1）！，即2个排列
 	let j = factorialize(n-1);
+	//排定第一个数字的索引，如n=3,k=5，排定第一个数字3
 	let index = Math.ceil(k/j)-1;
+	//排定第一个数字后，第一个数字之前的排列个数要从k里减去，数字3之前有(3-1)! * 2 个排列，从k中减去
 	k -= j*index;
 
 	n--;
