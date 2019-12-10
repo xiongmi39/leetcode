@@ -1,4 +1,4 @@
-import bsTreeNode from './bsTreeNode'
+import {treeNode as bsTreeNode}  from './bsTreeNode'
 
 export default class binarySearchTree{
 	constructor(compareFn = defaultConpareFn){

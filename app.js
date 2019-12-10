@@ -32,7 +32,14 @@ import Utils from './js/utils/utils.js';
 // import getPermutation from './js/backtrack/60getPermutation.js';
 // import grayCode from './js/backtrack/89grayCode.js';
 // import combine from './js/backtrack/77combine.js';
-import restoreIpAddresses from './js/backtrack/93restoreIpAddresses.js';
+// import restoreIpAddresses from './js/backtrack/93restoreIpAddresses.js';
+// import findLadders from './js/backtrack/126findLadders.js';
+
+import bsTreeNode from './js/tree/bsTreeNode.js';
+import buildTree from './js/tree/105buildTree.js';
+import arrToTree from './js/tree/tool.js';
+
+
 
 // import fraction from './js/LCP/2fraction.js';
 

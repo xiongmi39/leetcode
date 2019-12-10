@@ -1,4 +1,4 @@
-export default class bsTreeNode{
+export  class treeNode{
 	constructor(key){
 		this.key = key;
 		this.left = null;
