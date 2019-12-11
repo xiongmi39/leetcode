@@ -1,6 +1,6 @@
 export  class treeNode{
-	constructor(key){
-		this.key = key;
+	constructor(val){
+		this.val = val;
 		this.left = null;
 		this.right = null;
 	}
