@@ -12,6 +12,7 @@ import {Tool } from '../tree/tool'
  * @param {TreeNode} root
  * @return {number[][]}
  */
+ //迭代
 // var levelOrder = function(root) {
 //     let nodes = [root];
 //     let out = [];
@@ -44,6 +45,8 @@ import {Tool } from '../tree/tool'
 //     return out;
 // };
 
+
+//递归
 var levelOrder = function(root) {
 	if(root == null){
 		return [];
