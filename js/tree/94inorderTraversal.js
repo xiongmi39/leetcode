@@ -14,7 +14,8 @@
 var inorderTraversal = function(root) {
     let list = [];   
     // return getInorder([],root);
-    return getInorder2([],root);
+    // return getInorder2([],root);
+    return getInorder3([],root);
 };
 // 递归
 function getInorder(list,node){
@@ -42,12 +43,30 @@ function getInorder2(list,node){
 	return list;
 }
 
-
-
+//颜色标记法
+function getInorder3(list,node){
+	let stack = [['w',node]];
+	let cur ;
+	while(stack.length !== 0){
+		cur = stack.pop();
+		if(cur[1] == null){
+			continue;
+		}else{
+			if(cur[0] == 'g'){
+				list.push(cur[1].val);
+			}else{
+				stack.push(['w',cur[1].right]);
+				stack.push(['g',cur[1]]);
+				stack.push(['w',cur[1].left]);			
+			}			
+		}
+	}
+	return list;
+}
 let tool = new Tool();
 // let root = tool.arrToTree([1,null,2,3]);
-// let root = tool.arrToTree([2,3,null,1]);
-let root = tool.arrToTree([3,1,2]);
+let root = tool.arrToTree([2,3,null,1]);
+// let root = tool.arrToTree([3,1,2]);
 let testcase = inorderTraversal(root);
 console.log(testcase);
 

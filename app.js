@@ -39,7 +39,8 @@ import bsTreeNode from './js/tree/bsTreeNode.js';
 // import buildTree from './js/tree/105buildTree.js';
 import arrToTree from './js/tree/tool.js';
 // import levelOrder from './js/tree/102levelOrder.js';
-import inorderTraversal from './js/tree/94inorderTraversal.js';
+// import inorderTraversal from './js/tree/94inorderTraversal.js';
+import preorderTraversal from './js/tree/144preorderTraversal.js';
 
 
 
