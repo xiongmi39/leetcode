@@ -15,7 +15,8 @@ var inorderTraversal = function(root) {
     let list = [];   
     // return getInorder([],root);
     // return getInorder2([],root);
-    return getInorder3([],root);
+    // return getInorder3([],root);
+    return getInorder4([],root);
 };
 // 递归
 function getInorder(list,node){
@@ -63,9 +64,39 @@ function getInorder3(list,node){
 	}
 	return list;
 }
+
+//莫里斯遍历
+function getInorder4(list,node){
+	let cur = node;
+//如果没有左节点，右子树成为current
+//如果有左节点，让当前节点成为左子树最右节点的右节点，左子树成为current
+	while(cur !== null){
+		if(cur.left == null){
+			list.push(cur.val);
+			cur = cur.right;
+			node = node.right;
+		}else{
+			cur = cur.left;
+			node.left = null;
+			if(cur.right){
+				let pointer = cur.right;
+				while(pointer.right){
+					pointer = pointer.right;
+				}
+				pointer.right = node;				
+			}else{
+				cur.right = node;
+			}
+			node = cur;
+		}
+	}
+	return list;
+}
+
+
 let tool = new Tool();
 // let root = tool.arrToTree([1,null,2,3]);
-let root = tool.arrToTree([2,3,null,1]);
+let root = tool.arrToTree([1,2,3,4,5,6]);
 // let root = tool.arrToTree([3,1,2]);
 let testcase = inorderTraversal(root);
 console.log(testcase);
