@@ -57,18 +57,15 @@ var levelOrder = function(root) {
 };
 
 function layertree(levels,node,level){
+	if(node == null){
+		return levels;
+	}
 	if(levels.length < level+1){
 		levels.push([]);
 	}
-	if(node.val !== null){
-		levels[level].push(node.val);
-	}
-	if(node.left !== null){
-		layertree(levels,node.left,level+1);
-	}
-	if(node.right !== null){
-		layertree(levels,node.right,level+1);
-	}		
+	levels[level].push(node.val);
+	layertree(levels,node.left,level+1);
+	layertree(levels,node.right,level+1);	
 }
 
 //[1,2,null,3,null,4,null,5]
