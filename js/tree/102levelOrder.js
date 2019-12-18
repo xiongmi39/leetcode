@@ -76,7 +76,7 @@ function layertree(levels,node,level){
 let tool = new Tool();
 // let root = tool.arrToTree([1,2,null,3,null,4,null,5,null,6,null,7]);
 // let root = tool.arrToTree([1,2,3,4,5]);
-let root = tool.arrToTree([3]);
+let root = tool.arrToTree([3,9,20,null,null,15,7]);
 // let root = tool.arrToTree([3,9,20,null,null,15,7]);
 let testcase = levelOrder(root);
 console.log(testcase);
