@@ -47,7 +47,8 @@ import arrToTree from './js/tree/tool.js';
 // import isSameTree from './js/tree/100isSameTree.js';
 // import isSymmetric from './js/tree/101isSymmetric.js';
 // import zigzagLevelOrder from './js/tree/103zigzagLevelOrder.js';
-import maxDepth from './js/tree/104maxDepth.js';
+// import maxDepth from './js/tree/104maxDepth.js';
+import postorderTraversal from './js/tree/145postorderTraversal.js';
 
 
 // import fraction from './js/LCP/2fraction.js';
