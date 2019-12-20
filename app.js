@@ -49,7 +49,9 @@ import arrToTree from './js/tree/tool.js';
 // import zigzagLevelOrder from './js/tree/103zigzagLevelOrder.js';
 // import maxDepth from './js/tree/104maxDepth.js';
 // import postorderTraversal from './js/tree/145postorderTraversal.js';
-import buildTree from './js/tree/106buildTree.js';
+// import buildTree from './js/tree/106buildTree.js';
+// import levelOrderBottom from './js/tree/107levelOrderBottom.js';
+import sortedArrayToBST from './js/tree/108sortedArrayToBST.js';
 
 
 // import fraction from './js/LCP/2fraction.js';
