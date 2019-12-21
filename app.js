@@ -52,7 +52,10 @@ import arrToTree from './js/tree/tool.js';
 // import buildTree from './js/tree/106buildTree.js';
 // import levelOrderBottom from './js/tree/107levelOrderBottom.js';
 // import sortedArrayToBST from './js/tree/108sortedArrayToBST.js';
-import isBalanced from './js/tree/110isBalanced.js';
+// import isBalanced from './js/tree/110isBalanced.js';
+// import minDepth from './js/tree/111minDepth.js';
+// import hasPathSum from './js/tree/112hasPathSum.js';
+import generateTrees from './js/tree/95generateTrees.js';
 
 
 // import fraction from './js/LCP/2fraction.js';
