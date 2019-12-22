@@ -55,8 +55,10 @@ import arrToTree from './js/tree/tool.js';
 // import isBalanced from './js/tree/110isBalanced.js';
 // import minDepth from './js/tree/111minDepth.js';
 // import hasPathSum from './js/tree/112hasPathSum.js';
-import generateTrees from './js/tree/95generateTrees.js';
-
+// import generateTrees from './js/tree/95generateTrees.js';
+// import pathSum from './js/tree/113pathSum.js';
+// import sumNumbers from './js/tree/129sumNumbers.js';
+import maxPathSum from './js/tree/124maxPathSum.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
