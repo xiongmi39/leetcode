@@ -61,7 +61,8 @@ import arrToTree from './js/tree/tool.js';
 // import sumNumbers from './js/tree/129sumNumbers.js';
 // import maxPathSum from './js/tree/124maxPathSum.js';
 // import connect from './js/tree/116connect.js';
-import connect from './js/tree/117connect.js';
+// import connect from './js/tree/117connect.js';
+import flatten from './js/tree/114flatten.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
