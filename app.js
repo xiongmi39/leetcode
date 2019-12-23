@@ -36,6 +36,7 @@ import Utils from './js/utils/utils.js';
 // import findLadders from './js/backtrack/126findLadders.js';
 
 import bsTreeNode from './js/tree/bsTreeNode.js';
+import linktreeNode from './js/tree/linkTreeNode.js';
 // import buildTree from './js/tree/105buildTree.js';
 import arrToTree from './js/tree/tool.js';
 // import levelOrder from './js/tree/102levelOrder.js';
@@ -58,7 +59,9 @@ import arrToTree from './js/tree/tool.js';
 // import generateTrees from './js/tree/95generateTrees.js';
 // import pathSum from './js/tree/113pathSum.js';
 // import sumNumbers from './js/tree/129sumNumbers.js';
-import maxPathSum from './js/tree/124maxPathSum.js';
+// import maxPathSum from './js/tree/124maxPathSum.js';
+// import connect from './js/tree/116connect.js';
+import connect from './js/tree/117connect.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
