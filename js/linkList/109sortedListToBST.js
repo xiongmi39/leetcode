@@ -20,37 +20,60 @@ import {ListNode } from '../linkList/ListNode'
 import {linkTool } from '../linkList/linkTool'
  import {treeNode as TreeNode} from '../tree/bsTreeNode'
  import {Tool } from '../tree/tool'
-var sortedListToBST = function(head) {
-	return buildTree(head);
-	function buildTree(head){
-		if(head == null){
-			return null;
-		}
-		if(head.next == null){
-			return new TreeNode(head.val);
-		}
-		let one  = head;
-		let two = head;
-		let pre = null;
-		while(two !== null){
-			if(two.next !== null){
-				pre = one;
-				one = one.next;			
-				two = two.next.next;
-			}else{
-				two = null;
-			}
+// var sortedListToBST = function(head) {
+// 	return buildTree(head);
+// 	function buildTree(head){
+// 		if(head == null){
+// 			return null;
+// 		}
+// 		if(head.next == null){
+// 			return new TreeNode(head.val);
+// 		}
+// 		let one  = head;
+// 		let two = head;
+// 		let pre = null;
+// 		while(two !== null){
+// 			if(two.next !== null){
+// 				pre = one;
+// 				one = one.next;			
+// 				two = two.next.next;
+// 			}else{
+// 				two = null;
+// 			}
 			
-		}
-		let node = new TreeNode(one.val);
-		let right = one.next;
-		let left = head;
-		pre.next = null;
-		one = null;
-		node.left =   buildTree(left);
-		node.right = buildTree(right);  
-		return node;	
-	}
+// 		}
+// 		let node = new TreeNode(one.val);
+// 		let right = one.next;
+// 		let left = head;
+// 		pre.next = null;
+// 		one = null;
+// 		node.left =   buildTree(left);
+// 		node.right = buildTree(right);  
+// 		return node;	
+// 	}
+// };
+
+//中序
+var sortedListToBST = function(head) {
+    let size = 0;
+    let countsize = head;
+    while(countsize !== null){
+    	countsize = countsize.next;
+    	size++;
+    }
+    return buildTree(0,size-1);
+    function buildTree(l,r){
+    	if(l>r){
+    		return null;
+    	}
+    	let mid = Math.ceil((r+l)/2);
+    	let leftnode = buildTree(l,mid-1);
+    	let node = new TreeNode(head.val);
+    	head = head.next;
+    	node.left = leftnode;
+    	node.right = buildTree(mid+1,r);
+    	return node;
+    }
 };
 
 let tool = new linkTool();
