@@ -66,9 +66,10 @@ import arrToTree from './js/tree/tool.js';
 
 import ListNode from './js/linkList/ListNode.js';
 import linkTool from './js/linkList/linkTool.js';
-import sortedListToBST from './js/linkList/109sortedListToBST.js';
+// import sortedListToBST from './js/linkList/109sortedListToBST.js';
 
 // import ladderLength from './js/bfs/127ladderLength.js';
+import solve from './js/bfs/130solve.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
