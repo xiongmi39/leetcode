@@ -63,7 +63,8 @@ import arrToTree from './js/tree/tool.js';
 // import connect from './js/tree/116connect.js';
 // import connect from './js/tree/117connect.js';
 // import flatten from './js/tree/114flatten.js';
-import rightSideView from './js/tree/199rightSideView.js';
+// import rightSideView from './js/tree/199rightSideView.js';
+import numIslands from './js/dfs/200numIslands.js';
 
 import ListNode from './js/linkList/ListNode.js';
 import linkTool from './js/linkList/linkTool.js';
