@@ -63,6 +63,7 @@ import arrToTree from './js/tree/tool.js';
 // import connect from './js/tree/116connect.js';
 // import connect from './js/tree/117connect.js';
 // import flatten from './js/tree/114flatten.js';
+import rightSideView from './js/tree/199rightSideView.js';
 
 import ListNode from './js/linkList/ListNode.js';
 import linkTool from './js/linkList/linkTool.js';
@@ -72,7 +73,7 @@ import graghNode from './js/tree/graghNode.js';
 import graphTool from './js/tree/graphTool.js';
 // import ladderLength from './js/bfs/127ladderLength.js';
 // import solve from './js/bfs/130solve.js';
-import cloneGraph from './js/bfs/133cloneGraph.js';
+// import cloneGraph from './js/bfs/133cloneGraph.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
