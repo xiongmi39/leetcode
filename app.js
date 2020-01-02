@@ -64,7 +64,10 @@ import arrToTree from './js/tree/tool.js';
 // import connect from './js/tree/117connect.js';
 // import flatten from './js/tree/114flatten.js';
 // import rightSideView from './js/tree/199rightSideView.js';
-import numIslands from './js/dfs/200numIslands.js';
+// import numIslands from './js/dfs/200numIslands.js';
+
+// import findCircleNum from './js/DSU/547findCircleNum.js';
+import longestConsecutive from './js/DSU/128longestConsecutive.js';
 
 import ListNode from './js/linkList/ListNode.js';
 import linkTool from './js/linkList/linkTool.js';
