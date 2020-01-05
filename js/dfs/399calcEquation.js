@@ -52,53 +52,104 @@
 // };
 
 //bfs
+// var calcEquation = function(equations, values, queries) {
+// 	let graph = {};
+// 	let visited = {};
+// 	for (let i = 0; i < equations.length; i++) {
+// 		let [x,y] = equations[i];
+// 		if(!graph[x]){
+// 			graph[x] = {};
+// 		}
+// 		graph[x][y] = parseFloat(values[i]);
+// 		if(!graph[y]){
+// 			graph[y] = {};
+// 		}
+// 		graph[y][x] = parseFloat(1/values[i]);
+// 	}
+// 	let goal = [];
+// 	for (let i = 0; i < queries.length; i++) {
+// 		let [x,y] = queries[i];
+// 		let value = getValue(x,y);
+// 		goal.push(parseFloat(value));
+// 	}
+// 	return goal;
+// 	function getValue(x,y){
+// 		let q = [[x,1]];
+// 		let visited = {};
+// 		while(q.length !== 0){
+// 			let [s,v] = q.pop();
+// 			if(visited[s]){
+// 				continue;
+// 			}
+// 			if(!graph[x] || ! graph[y]){
+// 				return -1.0;
+// 			}
+// 			if(x == y){
+// 				return 1.0;
+// 			}
+// 			visited[s] = true;
+// 			for (let i in graph[s]) {
+// 				if(i == y){
+// 					return v*graph[s][i];
+// 				}
+// 				q.push([i,v*graph[s][i]]);
+// 			}
+// 		}
+// 		return -1.0;
+// 	}
+// };
+
 var calcEquation = function(equations, values, queries) {
-	let graph = {};
-	let visited = {};
-	for (let i = 0; i < equations.length; i++) {
-		let [x,y] = equations[i];
-		if(!graph[x]){
-			graph[x] = {};
-		}
-		graph[x][y] = parseFloat(values[i]);
-		if(!graph[y]){
-			graph[y] = {};
-		}
-		graph[y][x] = parseFloat(1/values[i]);
-	}
+	let par = {};
+	let val = {};
 	let goal = [];
+	for (let i = 0; i < equations.length; i++) {
+		let[x,y] = equations[i];
+		union(x,y,values[i]);
+	}
 	for (let i = 0; i < queries.length; i++) {
-		let [x,y] = queries[i];
-		let value = getValue(x,y);
-		goal.push(parseFloat(value));
+		goal.push(parseFloat(ask(queries[i][0],queries[i][1])));
 	}
 	return goal;
-	function getValue(x,y){
-		let q = [[x,1]];
-		let visited = {};
-		while(q.length !== 0){
-			let [s,v] = q.pop();
-			if(visited[s]){
-				continue;
-			}
-			if(!graph[x] || ! graph[y]){
-				return -1.0;
-			}
-			if(x == y){
-				return 1.0;
-			}
-			visited[s] = true;
-			for (let i in graph[s]) {
-				if(i == y){
-					return v*graph[s][i];
-				}
-				q.push([i,v*graph[s][i]]);
-			}
+	function ask(p,q){
+		if(!par[p] || !par[q]){
+			return -1.0;
 		}
-		return -1.0;
+
+		let rootp = find(p);
+		let rootq = find(q);
+		if(rootp !== rootq){
+			return -1.0;
+		}
+		return val[q] * 1.0 / val[p];
 	}
+	function init(p){
+		if(!par[p]){
+			par[p] = p; 
+			val[p] = 1;
+		}
+	}
+	function find(p){
+		if(par[p] == p){
+			return p;
+		}else{
+			let f = find(par[p]);
+			val[p] = val[p] * val[par[p]];
+			return par[p] = f;
+		}
+	}
+    function union(p,q,v){
+    	init(p);
+    	init(q);
+    	let rootp = find(p);
+    	let rootq = find(q);
+
+    	par[rootq] = rootp;
+    	val[rootq] = val[p] *1.0 / val[q] * v;
+
+    }
 };
 
-let testcase = calcEquation([["a","b"],["c","d"]],[1.0,1.0],[["a","c"],["b","d"],["b","a"],["d","c"]]);
+let testcase = calcEquation([["a","b"],["b","c"]],[2.0,3.0],[["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]);
 console.log(testcase);
 export default calcEquation;
