@@ -78,7 +78,8 @@ import graphTool from './js/tree/graphTool.js';
 // import ladderLength from './js/bfs/127ladderLength.js';
 // import solve from './js/bfs/130solve.js';
 // import cloneGraph from './js/bfs/133cloneGraph.js';
-import calcEquation from './js/dfs/399calcEquation.js';
+// import calcEquation from './js/dfs/399calcEquation.js';
+import canFinish from './js/dfs/207canFinish.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
