@@ -68,6 +68,7 @@ import arrToTree from './js/tree/tool.js';
 
 // import findCircleNum from './js/DSU/547findCircleNum.js';
 // import longestConsecutive from './js/DSU/128longestConsecutive.js';
+import findRedundantConnection from './js/DSU/684findRedundantConnection.js';
 
 import ListNode from './js/linkList/ListNode.js';
 import linkTool from './js/linkList/linkTool.js';
@@ -82,7 +83,7 @@ import graphTool from './js/tree/graphTool.js';
 // import canFinish from './js/dfs/207canFinish.js';
 // import findOrder from './js/bfs/210findOrder.js';
 // import canReach from './js/dfs/1306canReach.js';
-import findJudge from './js/bfs/997findJudge.js';
+// import findJudge from './js/bfs/997findJudge.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
