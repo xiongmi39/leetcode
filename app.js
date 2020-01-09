@@ -81,7 +81,8 @@ import graphTool from './js/tree/graphTool.js';
 // import calcEquation from './js/dfs/399calcEquation.js';
 // import canFinish from './js/dfs/207canFinish.js';
 // import findOrder from './js/bfs/210findOrder.js';
-import canReach from './js/dfs/1306canReach.js';
+// import canReach from './js/dfs/1306canReach.js';
+import findJudge from './js/bfs/997findJudge.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
