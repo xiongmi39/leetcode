@@ -65,7 +65,7 @@ import arrToTree from './js/tree/tool.js';
 // import flatten from './js/tree/114flatten.js';
 // import rightSideView from './js/tree/199rightSideView.js';
 // import numIslands from './js/dfs/200numIslands.js';
-import binaryTreePaths from './js/tree/257binaryTreePaths.js';
+// import binaryTreePaths from './js/tree/257binaryTreePaths.js';
 
 // import findCircleNum from './js/DSU/547findCircleNum.js';
 // import longestConsecutive from './js/DSU/128longestConsecutive.js';
@@ -88,6 +88,9 @@ import graphTool from './js/tree/graphTool.js';
 // import gardenNoAdj from './js/bfs/1042gardenNoAdj.js';
 // import findMinHeightTrees from './js/bfs/310findMinHeightTrees.js';
 // import canVisitAllRooms from './js/dfs/841canVisitAllRooms.js';
+// import findTargetSumWays from './js/dfs/494findTargetSumWays.js';
+
+import canPartition from './js/DP/416canPartition.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
