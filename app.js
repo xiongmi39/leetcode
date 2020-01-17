@@ -90,7 +90,10 @@ import graphTool from './js/tree/graphTool.js';
 // import canVisitAllRooms from './js/dfs/841canVisitAllRooms.js';
 // import findTargetSumWays from './js/dfs/494findTargetSumWays.js';
 
-import canPartition from './js/DP/416canPartition.js';
+// import canPartition from './js/DP/416canPartition.js';
+// import canPartitionKSubsets from './js/DP/698canPartitionKSubsets.js';
+// import coinChange from './js/DP/322coinChange.js';
+import change from './js/DP/518change.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
