@@ -94,7 +94,13 @@ import graphTool from './js/tree/graphTool.js';
 // import canPartitionKSubsets from './js/DP/698canPartitionKSubsets.js';
 // import coinChange from './js/DP/322coinChange.js';
 // import change from './js/DP/518change.js';
-import wordBreak from './js/DP/139wordBreak.js';
+// import wordBreak from './js/DP/139wordBreak.js';
+// import longestPalindrome from './js/DP/5longestPalindrome.js';
+// import maxProfit from './js/DP/121maxProfit.js';
+// import maxSubArray from './js/DP/53maxSubArray.js';
+import maxProduct from './js/DP/152maxProduct.js';
+// import climbStairs from './js/DP/70climbStairs.js';
+import rob from './js/DP/198rob.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
