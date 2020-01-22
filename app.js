@@ -98,9 +98,10 @@ import graphTool from './js/tree/graphTool.js';
 // import longestPalindrome from './js/DP/5longestPalindrome.js';
 // import maxProfit from './js/DP/121maxProfit.js';
 // import maxSubArray from './js/DP/53maxSubArray.js';
-import maxProduct from './js/DP/152maxProduct.js';
+// import maxProduct from './js/DP/152maxProduct.js';
 // import climbStairs from './js/DP/70climbStairs.js';
-import rob from './js/DP/198rob.js';
+// import rob from './js/DP/198rob.js';
+import uniquePaths from './js/DP/62uniquePaths.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
