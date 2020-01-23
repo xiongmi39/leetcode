@@ -101,7 +101,9 @@ import graphTool from './js/tree/graphTool.js';
 // import maxProduct from './js/DP/152maxProduct.js';
 // import climbStairs from './js/DP/70climbStairs.js';
 // import rob from './js/DP/198rob.js';
-import uniquePaths from './js/DP/62uniquePaths.js';
+// import uniquePaths from './js/DP/62uniquePaths.js';
+// import minPathSum from './js/DP/64minPathSum.js';
+import uniquePathsWithObstacles from './js/DP/63uniquePathsWithObstacles.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
