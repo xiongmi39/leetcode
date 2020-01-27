@@ -104,7 +104,14 @@ import graphTool from './js/tree/graphTool.js';
 // import uniquePaths from './js/DP/62uniquePaths.js';
 // import minPathSum from './js/DP/64minPathSum.js';
 // import uniquePathsWithObstacles from './js/DP/63uniquePathsWithObstacles.js';
-import minimumTotal from './js/DP/120minimumTotal.js';
+// import minimumTotal from './js/DP/120minimumTotal.js';
+// import longestValidParentheses from './js/DP/32longestValidParentheses.js';
+// import numDecodings from './js/DP/91numDecodings.js';
+// import isSubsequence from './js/DP/392isSubsequence.js';
+// import minCostClimbingStairs from './js/DP/746minCostClimbingStairs.js';
+// import countBits from './js/DP/338countBits.js';
+// import numSquares from './js/DP/279numSquares.js';
+import rob from './js/DP/213rob.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
