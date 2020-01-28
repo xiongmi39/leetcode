@@ -111,7 +111,9 @@ import graphTool from './js/tree/graphTool.js';
 // import minCostClimbingStairs from './js/DP/746minCostClimbingStairs.js';
 // import countBits from './js/DP/338countBits.js';
 // import numSquares from './js/DP/279numSquares.js';
-import rob from './js/DP/213rob.js';
+// import rob from './js/DP/213rob.js';
+// import lengthOfLIS from './js/DP/300lengthOfLIS.js';
+import divisorGame from './js/DP/1025divisorGame.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
