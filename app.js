@@ -113,7 +113,8 @@ import graphTool from './js/tree/graphTool.js';
 // import numSquares from './js/DP/279numSquares.js';
 // import rob from './js/DP/213rob.js';
 // import lengthOfLIS from './js/DP/300lengthOfLIS.js';
-import divisorGame from './js/DP/1025divisorGame.js';
+// import divisorGame from './js/DP/1025divisorGame.js';
+import maximalSquare from './js/DP/221maximalSquare.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
