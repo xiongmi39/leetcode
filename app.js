@@ -114,7 +114,11 @@ import graphTool from './js/tree/graphTool.js';
 // import rob from './js/DP/213rob.js';
 // import lengthOfLIS from './js/DP/300lengthOfLIS.js';
 // import divisorGame from './js/DP/1025divisorGame.js';
-import maximalSquare from './js/DP/221maximalSquare.js';
+// import maximalSquare from './js/DP/221maximalSquare.js';
+
+// import largestRectangleArea from './js/DaC/84largestRectangleArea.js';
+
+import maximalRectangle from './js/stack/85maximalRectangle.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
