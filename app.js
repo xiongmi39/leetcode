@@ -22,7 +22,10 @@ import Utils from './js/utils/utils.js';
 // import permute from './js/backtrack/solveNQueens51.js';
 // import generateParenthesis from './js/backtrack/22generateParenthesis.js';
 // import letterCombinations from './js/backtrack/17letterCombinations.js';
+
 // import isValidSudoku from './js/hash/36isValidSudoku.js';
+// import longestPalindrome from './js/hash/409longestPalindrome.js';
+
 // import exist from './js/backtrack/79exist.js';
 // import combinationSum2 from './js/backtrack/40combinationSum2.js';
 // import subsetsWithDup from './js/backtrack/90subsetsWithDup.js';
@@ -115,10 +118,15 @@ import graphTool from './js/tree/graphTool.js';
 // import lengthOfLIS from './js/DP/300lengthOfLIS.js';
 // import divisorGame from './js/DP/1025divisorGame.js';
 // import maximalSquare from './js/DP/221maximalSquare.js';
+// import minDistance from './js/DP/72minDistance.js';
+// import superEggDrop from './js/DP/887superEggDrop.js';
+// import longestPalindromeSubseq from './js/DP/516longestPalindromeSubseq.js';
+// import countSubstrings from './js/DP/647countSubstrings.js';
+import longestCommonSubsequence from './js/DP/1143longestCommonSubsequence.js';
 
 // import largestRectangleArea from './js/DaC/84largestRectangleArea.js';
 
-import maximalRectangle from './js/stack/85maximalRectangle.js';
+// import maximalRectangle from './js/stack/85maximalRectangle.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
