@@ -24,28 +24,41 @@
 //     return dp[len1][len2];
 // };
 //递归
+// var longestCommonSubsequence = function(text1, text2) {
+// 	let memo = {};
+// 	return dp(text1.length-1,text2.length-1);
+//     function dp(s,t){
+//     	if(s == -1){
+//     		return 0;
+//     	}
+//     	if(t == -1){
+//     		return 0;
+//     	}
+//     	if(memo[s+'.'+t]){
+//     		return memo[s+'.'+t];
+//     	}
+//     	if(text1.charAt(s) == text2.charAt(t)){
+//     		memo[s+'.'+t] = dp(s-1,t-1)+1;
+//     	}else{
+//     		memo[s+'.'+t] = Math.max(dp(s,t-1),dp(s-1,t));
+//     	}
+//     	return memo[s+'.'+t];
+//     }
+// };
 var longestCommonSubsequence = function(text1, text2) {
-	let memo = {};
-	return dp(text1.length-1,text2.length-1);
-    function dp(s,t){
-    	if(s == -1){
-    		return 0;
-    	}
-    	if(t == -1){
-    		return 0;
-    	}
-    	if(memo[s+'.'+t]){
-    		return memo[s+'.'+t];
-    	}
-    	if(text1.charAt(s) == text2.charAt(t)){
-    		memo[s+'.'+t] = dp(s-1,t-1)+1;
-    	}else{
-    		memo[s+'.'+t] = Math.max(dp(s,t-1),dp(s-1,t));
-    	}
-    	return memo[s+'.'+t];
-    }
+	let cur = -1;
+	let count = 0;
+	for (let i = 0; i < text1.length; i++) {
+		for (let j = cur+1; j < text2.length; j++) {
+			if(text1.charAt(i) == text2.charAt(j)){
+				cur = j;
+				count++;
+			}
+		}
+	}
+	return count;
 };
 
-let testcase = longestCommonSubsequence("abcde","ace");
+let testcase = longestCommonSubsequence("shmtulqrypy","oxcpqrsvwf");
 console.log(testcase);
 export default longestCommonSubsequence;

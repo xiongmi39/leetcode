@@ -122,7 +122,8 @@ import graphTool from './js/tree/graphTool.js';
 // import superEggDrop from './js/DP/887superEggDrop.js';
 // import longestPalindromeSubseq from './js/DP/516longestPalindromeSubseq.js';
 // import countSubstrings from './js/DP/647countSubstrings.js';
-import longestCommonSubsequence from './js/DP/1143longestCommonSubsequence.js';
+// import longestCommonSubsequence from './js/DP/1143longestCommonSubsequence.js';
+import numDistinct from './js/DP/115numDistinct.js';
 
 // import largestRectangleArea from './js/DaC/84largestRectangleArea.js';
 
