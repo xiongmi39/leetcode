@@ -123,7 +123,16 @@ import graphTool from './js/tree/graphTool.js';
 // import longestPalindromeSubseq from './js/DP/516longestPalindromeSubseq.js';
 // import countSubstrings from './js/DP/647countSubstrings.js';
 // import longestCommonSubsequence from './js/DP/1143longestCommonSubsequence.js';
-import numDistinct from './js/DP/115numDistinct.js';
+// import numDistinct from './js/DP/115numDistinct.js';
+// import PredictTheWinner from './js/DP/486PredictTheWinner.js';
+
+// import eraseOverlapIntervals from './js/greedy/435eraseOverlapIntervals.js';
+// import findMinArrowShots from './js/greedy/452findMinArrowShots.js';
+
+import strStr from './js/string/28strStr.js';
+
+// import hammingWeight from './js/bitOperation/191hammingWeight.js';
+// import hammingDistance from './js/bitOperation/461hammingDistance.js';
 
 // import largestRectangleArea from './js/DaC/84largestRectangleArea.js';
 
