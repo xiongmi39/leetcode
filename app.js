@@ -128,8 +128,14 @@ import graphTool from './js/tree/graphTool.js';
 
 // import eraseOverlapIntervals from './js/greedy/435eraseOverlapIntervals.js';
 // import findMinArrowShots from './js/greedy/452findMinArrowShots.js';
+// import canJump from './js/greedy/55canJump.js';
+// import balancedStringSplit from './js/greedy/1221balancedStringSplit.js';
 
-import strStr from './js/string/28strStr.js';
+// import findRepeatNumber from './js/interview/03findRepeatNumber.js';
+// import findNumberIn2DArray from './js/interview/04findNumberIn2DArray.js';
+import buildTree from './js/interview/07buildTree.js';
+
+// import strStr from './js/string/28strStr.js';
 
 // import hammingWeight from './js/bitOperation/191hammingWeight.js';
 // import hammingDistance from './js/bitOperation/461hammingDistance.js';
