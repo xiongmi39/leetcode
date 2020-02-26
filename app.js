@@ -77,6 +77,12 @@ import arrToTree from './js/tree/tool.js';
 import ListNode from './js/linkList/ListNode.js';
 import linkTool from './js/linkList/linkTool.js';
 // import sortedListToBST from './js/linkList/109sortedListToBST.js';
+// import insertionSortList from './js/linkList/147insertionSortList.js';
+// import addTwoNumbers from './js/linkList/02addTwoNumbers.js';
+// import removeNthFromEnd from './js/linkList/19removeNthFromEnd.js';
+// import mergeTwoLists from './js/linkList/21mergeTwoLists.js';
+// import reverseList from './js/linkList/206reverseList.js';
+import swapPairs from './js/linkList/24swapPairs.js';
 
 import graghNode from './js/tree/graghNode.js';
 import graphTool from './js/tree/graphTool.js';
@@ -133,7 +139,7 @@ import graphTool from './js/tree/graphTool.js';
 
 // import findRepeatNumber from './js/interview/03findRepeatNumber.js';
 // import findNumberIn2DArray from './js/interview/04findNumberIn2DArray.js';
-import buildTree from './js/interview/07buildTree.js';
+// import buildTree from './js/interview/07buildTree.js';
 
 // import strStr from './js/string/28strStr.js';
 
