@@ -82,7 +82,8 @@ import linkTool from './js/linkList/linkTool.js';
 // import removeNthFromEnd from './js/linkList/19removeNthFromEnd.js';
 // import mergeTwoLists from './js/linkList/21mergeTwoLists.js';
 // import reverseList from './js/linkList/206reverseList.js';
-import swapPairs from './js/linkList/24swapPairs.js';
+// import swapPairs from './js/linkList/24swapPairs.js';
+import mergeKLists from './js/linkList/23mergeKLists.js';
 
 import graghNode from './js/tree/graghNode.js';
 import graphTool from './js/tree/graphTool.js';
