@@ -84,7 +84,9 @@ import linkTool from './js/linkList/linkTool.js';
 // import reverseList from './js/linkList/206reverseList.js';
 // import swapPairs from './js/linkList/24swapPairs.js';
 // import mergeKLists from './js/linkList/23mergeKLists.js';
-import isPalindrome from './js/linkList/234isPalindrome.js';
+// import isPalindrome from './js/linkList/234isPalindrome.js';
+import reverseKGroup from './js/linkList/25reverseKGroup.js';
+// import rotateRight from './js/linkList/61rotateRight.js';
 
 import graghNode from './js/tree/graghNode.js';
 import graphTool from './js/tree/graphTool.js';
