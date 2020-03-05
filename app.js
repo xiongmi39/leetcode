@@ -85,8 +85,12 @@ import linkTool from './js/linkList/linkTool.js';
 // import swapPairs from './js/linkList/24swapPairs.js';
 // import mergeKLists from './js/linkList/23mergeKLists.js';
 // import isPalindrome from './js/linkList/234isPalindrome.js';
-import reverseKGroup from './js/linkList/25reverseKGroup.js';
+// import reverseKGroup from './js/linkList/25reverseKGroup.js';
 // import rotateRight from './js/linkList/61rotateRight.js';
+// import deleteDuplicates from './js/linkList/83deleteDuplicates.js';
+// import deleteDuplicates from './js/linkList/82deleteDuplicates.js';
+// import reverseBetween from './js/linkList/92reverseBetween.js';
+import detectCycle from './js/linkList/142detectCycle.js';
 
 import graghNode from './js/tree/graghNode.js';
 import graphTool from './js/tree/graphTool.js';
