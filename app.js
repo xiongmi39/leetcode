@@ -90,7 +90,9 @@ import linkTool from './js/linkList/linkTool.js';
 // import deleteDuplicates from './js/linkList/83deleteDuplicates.js';
 // import deleteDuplicates from './js/linkList/82deleteDuplicates.js';
 // import reverseBetween from './js/linkList/92reverseBetween.js';
-import detectCycle from './js/linkList/142detectCycle.js';
+// import detectCycle from './js/linkList/142detectCycle.js';
+// import sortList from './js/linkList/148sortList.js';
+import partition from './js/linkList/86partition.js';
 
 import graghNode from './js/tree/graghNode.js';
 import graphTool from './js/tree/graphTool.js';
