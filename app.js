@@ -92,7 +92,7 @@ import linkTool from './js/linkList/linkTool.js';
 // import reverseBetween from './js/linkList/92reverseBetween.js';
 // import detectCycle from './js/linkList/142detectCycle.js';
 // import sortList from './js/linkList/148sortList.js';
-import partition from './js/linkList/86partition.js';
+// import partition from './js/linkList/86partition.js';
 
 import graghNode from './js/tree/graghNode.js';
 import graphTool from './js/tree/graphTool.js';
@@ -159,6 +159,10 @@ import graphTool from './js/tree/graphTool.js';
 // import largestRectangleArea from './js/DaC/84largestRectangleArea.js';
 
 // import maximalRectangle from './js/stack/85maximalRectangle.js';
+// import isValid from './js/stack/20isValid.js';
+// import trap from './js/stack/42trap.js';
+// import removeOuterParentheses from './js/stack/1021removeOuterParentheses.js';
+import dailyTemperatures from './js/stack/739dailyTemperatures.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
