@@ -169,7 +169,9 @@ import graphTool from './js/tree/graphTool.js';
 // import backspaceCompare from './js/stack/844backspaceCompare.js';
 // import calPoints from './js/stack/682calPoints.js';
 // import BSTIterator from './js/stack/173BSTIterator.js';
-import nextGreaterElements from './js/stack/503nextGreaterElements.js';
+// import nextGreaterElements from './js/stack/503nextGreaterElements.js';
+// import calculate from './js/stack/224calculate.js';
+import removeKdigits from './js/stack/402removeKdigits.js';
 
 // import fraction from './js/LCP/2fraction.js';
 
